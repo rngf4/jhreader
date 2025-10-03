@@ -1,0 +1,19 @@
+{
+  "name": "jhreader",
+  "devDependencies": {
+    "turbo": "latest",
+    "prettier": "3.6.2"
+  },
+  "packageManager": "bun@1.2.0",
+  "private": true,
+  "scripts": {
+    "dev": "turbo run dev"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

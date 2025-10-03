@@ -1,0 +1,6 @@
+{
+  "name": "api",
+  "scripts": {
+    "dev": "bun run --watch src/index.ts"
+  }
+}
