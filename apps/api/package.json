@@ -1,5 +1,8 @@
 {
   "name": "api",
+  "dependencies": {
+    "@jhreader/database": "workspace:*"
+  },
   "scripts": {
     "dev": "bun run --watch src/index.ts"
   }

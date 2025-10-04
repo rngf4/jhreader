@@ -7,13 +7,19 @@
   "packageManager": "bun@1.2.0",
   "private": true,
   "scripts": {
-    "dev": "turbo run dev"
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "db:init": "turbo run db:init",
+    "db:generate": "turbo run db:generate",
+    "db:migrate": "turbo run db:migrate",
+    "db:push": "turbo run db:push",
+    "db:studio": "turbo run db:studio"
   },
   "workspaces": [
     "apps/*",
     "packages/*"
   ],
   "dependencies": {
-    "express": "^5.1.0"
+    "dotenv": "^17.2.3"
   }
 }

@@ -1,11 +1,9 @@
-import express from "express";
+import { db, users } from "@jhreader/database";
 
-const app = express();
+async function main() {
+  const allUsers = await db.select().from(users);
 
-app.get("/", (req, res) => {
-  res.send("API is running...");
-});
+  console.log(allUsers)
+}
 
-app.listen(3000, () => {
-  console.log("Server is running on http://localhost:3000");
-});
+main().catch(console.error);

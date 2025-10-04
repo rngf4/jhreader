@@ -1,7 +1,19 @@
 {
   "tasks": {
     "dev": {
-      "dependsOn": ["^dev"]
+      "dependsOn": ["^build"],
+      "persistent": true
+    },
+    "build": {
+      "dependsOn": ["^build"],
+      "outputs": ["dist/**"]
+    },
+    "db:init": {},
+    "db:generate": {},
+    "db:migrate": {},
+    "db:push": {},
+    "db:studio": {
+      "persistent": true
     }
   }
 }
